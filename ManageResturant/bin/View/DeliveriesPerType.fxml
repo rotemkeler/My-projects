@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DeliveriesPerTypeController">
+   <children>
+      <AnchorPane fx:id="deliveriesPerType" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="348.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.PNG" />
+               </image>
+            </ImageView>
+            <Button fx:id="back" layoutX="29.0" layoutY="22.0" mnemonicParsing="false" onAction="#deliveriesPerTypeSceneToMainScene" prefHeight="25.0" prefWidth="61.0" text="Back" />
+            <Label layoutX="90.0" layoutY="82.0" prefHeight="40.0" prefWidth="272.0" text="Number Of Deliveries" textFill="#efb81e">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="217.0" prefHeight="36.0" prefWidth="206.0" text="Express Delivery:">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="130.0" layoutY="284.0" prefHeight="36.0" prefWidth="206.0" text="Regular Delivery:">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="expressDelivery" layoutX="348.0" layoutY="225.0" prefHeight="17.0" prefWidth="42.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="regularDelivery" layoutX="348.0" layoutY="292.0" prefHeight="17.0" prefWidth="42.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="168.0" layoutY="130.0" prefHeight="40.0" prefWidth="130.0" text="Per Type:" textFill="#efb81e">
+               <font>
+                  <Font name="System Bold Italic" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

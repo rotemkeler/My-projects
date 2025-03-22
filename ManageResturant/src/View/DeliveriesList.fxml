@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DeliveriesListController">
+   <children>
+      <AnchorPane fx:id="deliveriesList" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="534.0" fitWidth="539.0" layoutX="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/1.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="back" layoutX="29.0" layoutY="22.0" mnemonicParsing="false" onAction="#deliveriesListSceneToMainScene" prefHeight="25.0" prefWidth="61.0" text="Back" />
+            <Label layoutX="148.0" layoutY="20.0" prefHeight="55.0" prefWidth="204.0" text="Deliveries:" textFill="#efb81e">
+               <font>
+                  <Font name="System Bold Italic" size="38.0" />
+               </font>
+            </Label>
+            <ListView fx:id="allDeliveries" layoutX="24.0" layoutY="131.0" prefHeight="269.0" prefWidth="451.0" />
+            <ImageView fitHeight="132.0" fitWidth="126.0" layoutX="385.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

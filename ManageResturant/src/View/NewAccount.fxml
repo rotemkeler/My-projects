@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="creatNewAccount" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NewAccountController">
+   <children>
+      <ImageView fitHeight="130.0" fitWidth="135.0" layoutX="371.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.PNG" />
+         </image>
+      </ImageView>
+      <Label layoutX="143.0" layoutY="15.0" prefHeight="40.0" prefWidth="200.0" text="New Account:" textFill="#efb81e">
+         <font>
+            <Font name="System Bold Italic" size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="169.0" prefHeight="28.0" prefWidth="147.0" text="First Name:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstName" focusTraversable="false" layoutX="131.0" layoutY="170.0" />
+      <Label layoutX="16.0" layoutY="205.0" prefHeight="27.0" prefWidth="115.0" text="Last Name:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="lastName" focusTraversable="false" layoutX="131.0" layoutY="206.0" />
+      <Label layoutX="16.0" layoutY="240.0" prefHeight="27.0" prefWidth="121.0" text="Date Of Birth:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateOfBirth" focusTraversable="false" layoutX="129.0" layoutY="241.0" prefHeight="25.0" prefWidth="184.0" />
+      <Label layoutX="17.0" layoutY="278.0" prefHeight="27.0" prefWidth="69.0" text="Gender:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="17.0" layoutY="316.0" prefHeight="27.0" prefWidth="135.0" text="Neighberhood:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="29.0" layoutY="22.0" mnemonicParsing="false" onAction="#NewManagerAccountToLoginScene" prefHeight="25.0" prefWidth="61.0" text="Back" />
+      <Button fx:id="save" layoutX="414.0" layoutY="460.0" mnemonicParsing="false" onAction="#saveNewAccount" prefHeight="25.0" prefWidth="61.0" text="Save" />
+      <ComboBox fx:id="neighberhoodList" layoutX="137.0" layoutY="317.0" prefWidth="150.0" promptText="Select" />
+      <RadioButton fx:id="male" layoutX="109.0" layoutY="282.0" mnemonicParsing="false" text="Male">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="genderGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="189.0" layoutY="282.0" mnemonicParsing="false" text="Female" toggleGroup="$genderGroup">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="unknown" layoutX="283.0" layoutY="282.0" mnemonicParsing="false" text="Unknown" toggleGroup="$genderGroup">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="19.0" layoutY="354.0" prefHeight="27.0" prefWidth="135.0" text="User Name:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userName" focusTraversable="false" layoutX="129.0" layoutY="355.0" />
+      <Label layoutX="20.0" layoutY="388.0" prefHeight="27.0" prefWidth="115.0" text="Password:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" focusTraversable="false" layoutX="129.0" layoutY="389.0" />
+      <Label fx:id="alertFill" alignment="CENTER" layoutX="13.0" layoutY="52.0" prefHeight="47.0" prefWidth="367.0" textFill="#e93535">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="manager" layoutX="16.0" layoutY="101.0" mnemonicParsing="false" onAction="#chooseCustomer" prefHeight="20.0" prefWidth="90.0" text="Manager">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="type" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="customer" layoutX="137.0" layoutY="101.0" mnemonicParsing="false" onAction="#chooseCustomer" text="Customer" toggleGroup="$type">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <TextField fx:id="idNumber" layoutX="131.0" layoutY="134.0" />
+      <Label layoutX="15.0" layoutY="133.0" prefHeight="28.0" prefWidth="115.0" text="ID Number:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="alertNumber" alignment="CENTER" layoutX="287.0" layoutY="137.0" prefHeight="20.0" prefWidth="190.0" textFill="#e41b1b">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="progressBar" layoutX="293.0" layoutY="393.0" prefWidth="200.0" progress="0.0" />
+      <Button fx:id="addPhoto" layoutX="19.0" layoutY="427.0" mnemonicParsing="false" onAction="#addNewPhoto" text="Browse Image" />
+      <ImageView fx:id="customerPhoto" fitHeight="111.0" fitWidth="135.0" layoutX="347.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="sensitive" layoutX="130.0" layoutY="426.0" prefHeight="27.0" prefWidth="70.0" text="Sensitive:" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="gluten" layoutX="212.0" layoutY="431.0" mnemonicParsing="false" text="Gluten" visible="false" />
+      <RadioButton fx:id="lactuse" layoutX="212.0" layoutY="459.0" mnemonicParsing="false" text="Lactuse" visible="false" />
+      <Label fx:id="alertPhoto" layoutX="22.0" layoutY="453.0" prefHeight="40.0" prefWidth="84.0" textFill="#f22727">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

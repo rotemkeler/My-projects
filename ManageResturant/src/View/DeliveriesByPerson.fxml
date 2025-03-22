@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DeliveriesByPersonController">
+   <children>
+      <AnchorPane fx:id="deiveriesByPersonScreen" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="350.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.PNG" />
+               </image>
+            </ImageView>
+            <Label layoutX="83.0" layoutY="66.0" prefHeight="40.0" prefWidth="289.0" text="Deliveries By Person:" textFill="#efb81e">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="monthList" layoutX="176.0" layoutY="147.0" prefWidth="150.0" promptText="select month" />
+            <Label layoutX="64.0" layoutY="145.0" prefHeight="28.0" prefWidth="147.0" text="Month:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="64.0" layoutY="195.0" prefHeight="28.0" prefWidth="147.0" text="Delivery Person:">
+               <font>
+               
+               
+               
+               
+               
+               
+               
+               
+               
+               
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="dpList" layoutX="222.0" layoutY="196.0" prefWidth="150.0" promptText="select delivery person" />
+            <Button fx:id="ok" layoutX="221.0" layoutY="250.0" mnemonicParsing="false" onAction="#okButton" prefHeight="25.0" prefWidth="55.0" text="Ok" />
+            <Button fx:id="back" layoutX="22.0" layoutY="21.0" mnemonicParsing="false" onAction="#deiveriesByPersonSceneToMainScene" prefHeight="25.0" prefWidth="55.0" text="Back" />
+            <ListView fx:id="deliveriesList" layoutX="52.0" layoutY="294.0" prefHeight="169.0" prefWidth="397.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerMainWindowController">
+   <children>
+      <AnchorPane fx:id="mainCustomerScene" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="142.0" layoutX="357.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.PNG" />
+               </image>
+            </ImageView>
+            <Label fx:id="txtWelcome" layoutX="86.0" layoutY="66.0" prefHeight="62.0" prefWidth="289.0" text="Welcome Customer!">
+               <font>
+                  <Font name="System Bold" size="29.0" />
+               </font>
+            </Label>
+            <Button fx:id="orders" layoutX="177.0" layoutY="218.0" mnemonicParsing="false" onAction="#ordersCustomerScene" prefHeight="100.0" prefWidth="119.0" text="Orders" textFill="#efb81e">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="personalInformation" layoutX="31.0" layoutY="218.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#personalInformationScene" prefHeight="100.0" prefWidth="119.0" text="Personal Information" textAlignment="CENTER" textFill="#efb81e" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="shoppingCart" layoutX="326.0" layoutY="218.0" mnemonicParsing="false" onAction="#shoppingCartCustomerScene" prefHeight="100.0" prefWidth="119.0" text="Shopping Cart" textAlignment="CENTER" textFill="#efb81e" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="relevantDish" alignment="CENTER" contentDisplay="CENTER" layoutX="31.0" layoutY="339.0" mnemonicParsing="false" onAction="#relevantDishes" prefHeight="100.0" prefWidth="119.0" text="Relevant Dishes" textAlignment="CENTER" textFill="#efb81e" textOverrun="WORD_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="cookByExpertise" alignment="CENTER" layoutX="177.0" layoutY="339.0" mnemonicParsing="false" onAction="#cooksByExpertiseCustomer" prefHeight="100.0" prefWidth="119.0" text="Cook By Expertise" textAlignment="CENTER" textFill="#efb81e" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="menu" layoutX="118.0" layoutY="142.0" mnemonicParsing="false" onAction="#menuScene" prefHeight="51.0" prefWidth="328.0" text="Menu" textFill="#efb81e">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Button>
+            <Button fx:id="popularComponents" layoutX="326.0" layoutY="339.0" mnemonicParsing="false" onAction="#popularComponentsCustomer" prefHeight="100.0" prefWidth="119.0" text="Popular Component" textAlignment="CENTER" textFill="#efb81e" wrapText="true">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="logout" layoutX="31.0" layoutY="142.0" mnemonicParsing="false" onAction="#logout" prefHeight="51.0" prefWidth="76.0" text="Logout" textFill="#efb81e">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Button fx:id="saveSerialize" layoutX="212.0" layoutY="460.0" mnemonicParsing="false" onAction="#saveData" prefHeight="25.0" prefWidth="50.0" text="Save" textFill="#efb81e">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <ImageView fx:id="customerPhoto" fitHeight="79.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

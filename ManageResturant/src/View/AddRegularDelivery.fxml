@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddRegularDeliveryController">
+   <children>
+      <AnchorPane fx:id="addRegularDeliveryScene" layoutX="4.0" layoutY="4.0" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="352.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.PNG" />
+               </image>
+            </ImageView>
+            <Label layoutX="70.0" layoutY="71.0" prefHeight="40.0" prefWidth="300.0" text="Add Regular Delivery:" textFill="#efb81e">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="150.0" prefHeight="28.0" prefWidth="171.0" text="Delivery Person:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="250.0" prefHeight="28.0" prefWidth="147.0">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="30.0" layoutY="21.0" mnemonicParsing="false" onAction="#addRegularDeliverySceneToMainScene" prefHeight="25.0" prefWidth="61.0" text="Back" />
+            <Button layoutX="412.0" layoutY="440.0" mnemonicParsing="false" onAction="#saveRegularDelivery" prefHeight="25.0" prefWidth="61.0" text="Save" />
+            <Label layoutX="30.0" layoutY="200.0" prefHeight="28.0" prefWidth="99.0" text="Area:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="299.0" prefHeight="28.0" prefWidth="147.0" text="Delivered Date:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="deliveredDate" layoutX="178.0" layoutY="301.0" />
+            <ComboBox fx:id="deliveryPerson" layoutX="175.0" layoutY="152.0" prefWidth="150.0" promptText="select delivery person" />
+            <ComboBox fx:id="area" layoutX="103.0" layoutY="202.0" prefWidth="150.0" promptText="select area" />
+            <CheckBox fx:id="isDelivered" layoutX="27.0" layoutY="250.0" mnemonicParsing="false" text="IsDelivered">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="alertFill" alignment="CENTER" layoutX="114.0" layoutY="122.0" prefHeight="17.0" prefWidth="287.0" textFill="#d92a2a">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="111.0" fitWidth="171.0" layoutX="372.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/delivery.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="29.0" layoutY="348.0" prefHeight="28.0" prefWidth="70.0" text="Orders:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ListView fx:id="ordersToChoose" layoutX="104.0" layoutY="354.0" prefHeight="125.0" prefWidth="227.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

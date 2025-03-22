@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddDishController">
+   <children>
+      <AnchorPane fx:id="addDishScene" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="119.0" fitWidth="141.0" layoutX="342.0" layoutY="328.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/dish.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="150.0" layoutY="51.0" prefHeight="40.0" prefWidth="147.0" text="Add Dish:" textFill="#efb81e">
+               <font>
+                  <Font name="System Bold Italic" size="32.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="149.0" prefHeight="28.0" prefWidth="147.0" text="Dish Name:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="193.0" prefHeight="28.0" prefWidth="147.0" text="Dish Type:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="236.0" prefHeight="28.0" prefWidth="147.0" text="Components:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="30.0" layoutY="356.0" prefHeight="28.0" prefWidth="147.0" text="Time To Make:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="30.0" layoutY="21.0" mnemonicParsing="false" onAction="#addDishSceneToMainScene" prefHeight="25.0" prefWidth="61.0" text="Back" />
+            <Button layoutX="412.0" layoutY="440.0" mnemonicParsing="false" onAction="#saveDish" prefHeight="25.0" prefWidth="61.0" text="Save" />
+            <TextField fx:id="dishName" layoutX="149.0" layoutY="151.0" />
+            <TextField fx:id="timeToMake" layoutX="175.0" layoutY="357.0" />
+            <ComboBox fx:id="dishTypeList" layoutX="149.0" layoutY="195.0" prefWidth="150.0" promptText="select type" />
+            <Label fx:id="alertFill" alignment="CENTER" layoutX="130.0" layoutY="117.0" prefHeight="17.0" prefWidth="225.0" textFill="#e03131">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="alertNumber" alignment="CENTER" layoutX="145.0" layoutY="384.0" prefHeight="19.0" prefWidth="196.0" textFill="#f42424">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <ListView fx:id="componentsList" layoutX="150.0" layoutY="244.0" prefHeight="92.0" prefWidth="213.0" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="350.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

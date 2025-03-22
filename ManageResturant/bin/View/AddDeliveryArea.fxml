@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddDaController">
+   <children>
+      <AnchorPane fx:id="addDaScene" layoutX="3.0" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="352.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.PNG" />
+               </image>
+            </ImageView>
+            <Label layoutX="112.0" layoutY="46.0" prefHeight="40.0" prefWidth="275.0" text="Add Delivery Area:" textFill="#efb81e">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="118.0" prefHeight="28.0" prefWidth="147.0" text="Area Name:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="161.0" prefHeight="28.0" prefWidth="147.0" text="Neighberhoods:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="back" layoutX="30.0" layoutY="21.0" mnemonicParsing="false" onAction="#addDaSceneToMainScene" prefHeight="25.0" prefWidth="61.0" text="Back" />
+            <Button layoutX="412.0" layoutY="440.0" mnemonicParsing="false" onAction="#saveDeliveryArea" prefHeight="25.0" prefWidth="61.0" text="Save" />
+            <TextField fx:id="areaName" layoutX="148.0" layoutY="119.0" />
+            <Label layoutX="29.0" layoutY="319.0" prefHeight="28.0" prefWidth="147.0" text="Delivery Time:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="time" layoutX="191.0" layoutY="320.0" />
+            <ListView fx:id="neighberhoodList" layoutX="191.0" layoutY="161.0" prefHeight="139.0" prefWidth="188.0" />
+            <Label fx:id="alertFill" alignment="CENTER" layoutX="132.0" layoutY="86.0" prefHeight="17.0" prefWidth="235.0" textFill="#dd1d1d">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="alertNumber" alignment="CENTER" layoutX="188.0" layoutY="354.0" prefHeight="17.0" prefWidth="164.0" textFill="#e41d1d">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="117.0" fitWidth="164.0" layoutX="369.0" layoutY="305.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/area.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

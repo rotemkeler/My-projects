@@ -1,0 +1,113 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#lblStatus{
+	-fx-font-size: 35px;
+	-fx-text-fill: black  ;
+	-fx-padding: 10 10 10 10;
+	-fx-border-radius: 30;
+	-fx-font-weight: bold;
+}
+
+
+#loginScene{
+	-fx-background-color: white ;
+}
+
+#login{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+#newAccount{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+#cooks{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+#deliveryPersons{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+#customers{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+#dishes{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+#components{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+#orders{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+ #deliveries{
+ 	-fx-background-color: black ;
+	-fx-font-weight: bold;
+ }
+
+#areas{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+#logout{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+#shoppingCart{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+#menu{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+#personalInformation{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+#orders{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+#dishes{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+#cookByExpertise{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+#popularComponents{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+#relevantDish{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}
+
+#saveSerialize{
+	-fx-background-color: black ;
+	-fx-font-weight: bold;
+}

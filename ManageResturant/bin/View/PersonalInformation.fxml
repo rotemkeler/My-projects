@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PersonalInformationController">
+   <children>
+      <AnchorPane fx:id="personalInformationScene" layoutY="1.0" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <Button layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#toMainCustomerScene" prefHeight="25.0" prefWidth="54.0" text="Back" />
+            <Label layoutX="48.0" layoutY="211.0" prefHeight="25.0" prefWidth="98.0" text="First Name:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="250.0" prefHeight="25.0" prefWidth="98.0" text="Last Name:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="290.0" prefHeight="25.0" prefWidth="111.0" text="Date Of Birth:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="327.0" prefHeight="25.0" prefWidth="98.0" text="Gender:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="365.0" prefHeight="25.0" prefWidth="127.0" text="Neighberhood:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="403.0" prefHeight="25.0" prefWidth="98.0" text="User Name:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="436.0" prefHeight="25.0" prefWidth="98.0" text="Password:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutX="412.0" layoutY="455.0" mnemonicParsing="false" onAction="#saveDetailsChanges" prefHeight="25.0" prefWidth="59.0" text="Save" />
+            <TextField fx:id="txtLastName" layoutX="146.0" layoutY="250.0" />
+            <TextField fx:id="txtFirstName" layoutX="146.0" layoutY="211.0" />
+            <TextField fx:id="txtUserName" layoutX="147.0" layoutY="403.0" />
+            <TextField fx:id="txtPassword" layoutX="140.0" layoutY="436.0" />
+            <Label layoutX="48.0" layoutY="177.0" prefHeight="25.0" prefWidth="98.0" text="ID Number:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtIdNumber" alignment="TOP_LEFT" layoutX="151.0" layoutY="177.0" prefHeight="17.0" prefWidth="127.0">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="txtDateBirth" layoutX="163.0" layoutY="290.0" />
+            <RadioButton fx:id="male" layoutX="120.0" layoutY="331.0" mnemonicParsing="false" text="Male">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="gender" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="female" layoutX="193.0" layoutY="329.0" mnemonicParsing="false" text="Female" toggleGroup="$gender">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="unknown" layoutX="286.0" layoutY="329.0" mnemonicParsing="false" text="Unknown" toggleGroup="$gender">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <ComboBox fx:id="chooseNeighberhood" layoutX="176.0" layoutY="365.0" prefWidth="150.0" promptText="select" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="350.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="customerPhoto" fitHeight="124.0" fitWidth="162.0" layoutX="147.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="changePhoto" layoutX="182.0" layoutY="145.0" mnemonicParsing="false" onAction="#addNewPhoto" text="Change Photo" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

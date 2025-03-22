@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AIMechineController">
+   <children>
+      <AnchorPane fx:id="AIMechine" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="346.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.PNG" />
+               </image>
+            </ImageView>
+            <Button fx:id="back" layoutX="29.0" layoutY="22.0" mnemonicParsing="false" onAction="#AIMechineSceneToMainScene" prefHeight="25.0" prefWidth="61.0" text="Back" />
+            <Label layoutX="163.0" layoutY="53.0" prefHeight="45.0" prefWidth="174.0" text="AI Machine:" textFill="#efb81e">
+               <font>
+                  <Font name="System Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Button layoutX="211.0" layoutY="321.0" mnemonicParsing="false" onAction="#showDeliveries" prefHeight="25.0" prefWidth="69.0" text="Continue" />
+            <Label layoutX="24.0" layoutY="124.0" prefHeight="26.0" prefWidth="199.0" text="Choose Delivery Person:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="dpList" layoutX="228.0" layoutY="125.0" prefWidth="150.0" promptText="selelct" />
+            <Label layoutX="29.0" layoutY="178.0" prefHeight="26.0" prefWidth="189.0" text="Choose Delivery Area:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="daList" layoutX="228.0" layoutY="179.0" prefWidth="150.0" promptText="select" />
+            <Label layoutX="29.0" layoutY="237.0" prefHeight="26.0" prefWidth="130.0" text="Choose Orders:">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Label>
+            <ListView fx:id="ordersList" layoutX="163.0" layoutY="243.0" prefHeight="64.0" prefWidth="242.0" />
+            <ListView fx:id="deliveriesList" layoutX="28.0" layoutY="362.0" prefHeight="110.0" prefWidth="443.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

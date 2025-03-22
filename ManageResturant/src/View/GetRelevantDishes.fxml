@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GetRelevantDishesController">
+   <children>
+      <AnchorPane fx:id="getRelevantDish" layoutY="2.0" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="350.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.PNG" />
+               </image>
+            </ImageView>
+            <Button layoutX="29.0" layoutY="22.0" mnemonicParsing="false" onAction="#getRelevanrDishesSceneToMainScene" prefHeight="25.0" prefWidth="61.0" text="Back" />
+            <Label layoutX="113.0" layoutY="66.0" prefHeight="40.0" prefWidth="255.0" text="Get Relevant Dish:" textFill="#efb81e">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font>
+            </Label>
+            <ListView fx:id="getRelevantDishes" layoutX="31.0" layoutY="280.0" prefHeight="167.0" prefWidth="438.0" />
+            <Label layoutX="31.0" layoutY="254.0" prefHeight="25.0" prefWidth="133.0" text="Relevant Dishes:" textFill="#e5a417">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="continueButton" layoutX="205.0" layoutY="216.0" mnemonicParsing="false" onAction="#showRelevantDish" prefHeight="25.0" prefWidth="71.0" text="Continue" />
+            <Label layoutX="163.0" layoutY="118.0" prefHeight="27.0" prefWidth="173.0" text="Choose Customer:">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="chooseCustomer" editable="true" layoutX="145.0" layoutY="169.0" prefHeight="25.0" prefWidth="195.0" promptText="select" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

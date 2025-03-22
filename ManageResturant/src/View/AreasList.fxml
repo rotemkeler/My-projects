@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AreasListController">
+   <children>
+      <AnchorPane fx:id="areasList" layoutX="1.0" layoutY="1.0" prefHeight="500.0" prefWidth="500.0">
+         <children>
+            <ImageView fitHeight="515.0" fitWidth="520.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/1.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="back" layoutX="29.0" layoutY="22.0" mnemonicParsing="false" onAction="#areasListSceneToMainScene" prefHeight="25.0" prefWidth="61.0" text="Back" />
+            <Label layoutX="190.0" layoutY="22.0" prefHeight="55.0" prefWidth="123.0" text="Areas:" textFill="#efb81e">
+               <font>
+                  <Font name="System Bold Italic" size="38.0" />
+               </font>
+            </Label>
+            <ListView fx:id="allAreas" layoutX="22.0" layoutY="140.0" prefHeight="245.0" prefWidth="461.0" />
+            <ImageView fitHeight="136.0" fitWidth="137.0" layoutX="377.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.PNG" />
+               </image>
+            </ImageView>
+            <Button layoutX="220.0" layoutY="397.0" mnemonicParsing="false" onAction="#editArea" onMouseClicked="#areaChoose" text="Edit Area" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

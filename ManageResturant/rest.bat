@@ -1,0 +1,1 @@
+java --module-path "C:\Users\Rotem\eclipse-workspace\javafx-sdk-16\lib" --add-modules javafx.controls,javafx.fxml -jar Rest.jar

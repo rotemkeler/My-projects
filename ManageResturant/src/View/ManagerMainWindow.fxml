@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainScreen" maxHeight="500" maxWidth="500" minHeight="500" minWidth="500" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ManagerMainController">
+   <children>
+      <ImageView fitHeight="123.0" fitWidth="105.0" layoutX="395.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.PNG" />
+         </image>
+      </ImageView>
+      <Label fx:id="txtWelcome" layoutX="92.0" layoutY="47.0" prefHeight="62.0" prefWidth="316.0" text="Welcome Manager !">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <MenuBar layoutY="1.0" prefHeight="25.0" prefWidth="154.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#logout" text="Logout" />
+                  <MenuItem mnemonicParsing="false" onAction="#exit" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Add">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#addCooksManagerScene" text="Add Cook" />
+                  <MenuItem mnemonicParsing="false" onAction="#addDpManagerScene" text="Add Delivery Person" />
+                  <MenuItem mnemonicParsing="false" onAction="#addCustomerManagerScene" text="Add Customer" />
+                  <MenuItem mnemonicParsing="false" onAction="#addDishManagerScene" text="Add Dish" />
+                  <MenuItem mnemonicParsing="false" onAction="#addComponentManagerScene" text="Add Component" />
+                  <MenuItem mnemonicParsing="false" onAction="#addOrderManagerScene" text="Add Order" />
+                  <Menu mnemonicParsing="false" text="Add Delivery">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#addExpressDeliveryManagerScene" text="Express Delivery" />
+                        <MenuItem mnemonicParsing="false" onAction="#addRegularDeliveryManagerScene" text="Regular Delivery" />
+                    </items>
+                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#addDaManagerScene" text="Add Delivery Area" />
+                  <MenuItem mnemonicParsing="false" onAction="#addCustomerToBlManagerScene" text="Add Customer To Black List" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Remove">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#removeCooksManagerScene" text="Remove Cook" />
+                  <MenuItem mnemonicParsing="false" onAction="#removeDpManagerScene" text="Remove Delivery Person" />
+                  <MenuItem mnemonicParsing="false" onAction="#removeCustomerManagerScene" text="Remove Customer" />
+                  <MenuItem mnemonicParsing="false" onAction="#removeDishManagerScene" text="Remove Dish" />
+              <MenuItem mnemonicParsing="false" onAction="#removeComponentManagerScene" text="Remove Component" />
+                  <MenuItem mnemonicParsing="false" onAction="#removeOrderManagerScene" text="Remove Order" />
+                  <MenuItem mnemonicParsing="false" onAction="#removeDeliveryManagerScene" text="Remove Delivery" />
+                  <MenuItem mnemonicParsing="false" onAction="#removeDaManagerScene" text="Remove Delivery Area" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <MenuBar layoutX="146.0" layoutY="1.0" prefHeight="25.0" prefWidth="433.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Function">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#getRelevantDishesManagerScene" text="Relevant Dish" />
+                  <MenuItem mnemonicParsing="false" onAction="#cooksByExpertiseManagerScene" text="Cooks By Expertise" />
+                  <MenuItem mnemonicParsing="false" onAction="#deliveriesByPersonManagerScene" text="Deliveries By Person" />
+                  <MenuItem mnemonicParsing="false" onAction="#deliveriesPerTypeManagerScene" text="Deliveries Per Type" />
+                  <MenuItem mnemonicParsing="false" onAction="#financeDetailsSceneManagerScene" text="Finance Details" />
+                  <MenuItem mnemonicParsing="false" onAction="#popularComponentsManagerScene" text="Popular Components" />
+                  <MenuItem mnemonicParsing="false" onAction="#AIMechineManagerScene" text="Create AI Mechine" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="cooks" layoutX="32.0" layoutY="179.0" mnemonicParsing="false" onAction="#cookListManagerScene" prefHeight="93.0" prefWidth="89.0" text="Cooks List" textFill="#efb81e">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button fx:id="deliveryPersons" layoutX="146.0" layoutY="179.0" mnemonicParsing="false" onAction="#dpListManagerScene" prefHeight="93.0" prefWidth="89.0" text="Delivery Persons List" textAlignment="CENTER" textFill="#efb81e" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="customers" alignment="CENTER" layoutX="264.0" layoutY="179.0" mnemonicParsing="false" onAction="#customersListManagerScene" prefHeight="93.0" prefWidth="89.0" text="Customers List" textAlignment="CENTER" textFill="#efb81e" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="deliveries" layoutX="264.0" layoutY="316.0" mnemonicParsing="false" onAction="#deliveriesListManagerScene" prefHeight="93.0" prefWidth="89.0" text="Deliveris List" textAlignment="CENTER" textFill="#efb81e" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="components" layoutX="32.0" layoutY="316.0" mnemonicParsing="false" onAction="#componentsListManagerScene" prefHeight="93.0" prefWidth="89.0" text="Components List" textAlignment="CENTER" textFill="#efb81e" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="orders" layoutX="146.0" layoutY="316.0" mnemonicParsing="false" onAction="#ordersListManagerScene" prefHeight="93.0" prefWidth="89.0" text="Orders List" textFill="#efb81e">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label layoutX="176.0" layoutY="109.0" prefHeight="32.0" prefWidth="118.0" text="Show Lists:" textFill="#efb81e">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="dishes" layoutX="375.0" layoutY="179.0" mnemonicParsing="false" onAction="#dishesListManagerScene" prefHeight="93.0" prefWidth="89.0" text="Dishes List" textFill="#efb81e" wrapText="true">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="areas" layoutX="375.0" layoutY="316.0" mnemonicParsing="false" onAction="#areasListManagerScene" prefHeight="93.0" prefWidth="89.0" text="Areas List" textFill="#efb81e">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="saveSerialize" layoutX="225.0" layoutY="460.0" mnemonicParsing="false" onAction="#saveData" prefHeight="25.0" prefWidth="50.0" text="Save" textFill="#efb81e">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
