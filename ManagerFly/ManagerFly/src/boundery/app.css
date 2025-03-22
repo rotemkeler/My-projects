@@ -1,0 +1,38 @@
+.Homebutton:hover {
+    -fx-background-color: #003366;
+    -fx-scale-y: 1.1;
+}
+.Homebutton{
+	-fx-font-size: 25;
+}
+
+.fld{
+	}
+
+.combo{
+}
+
+.btn{
+	-fx-background-color:#336799;
+	-fx-text-fill:#ffffff;
+	-fx-font-size:13px;
+	-fx-border-color:#00ccff;
+}
+.btn:hover{
+	-fx-background-color:#1603D3;
+}
+.managerAllText{
+	-fx-font-size:15px;
+}
+.managerAllTitles{
+	
+}
+
+.selectedresult{
+	-fx-border-color:#00ccff;
+	-fx-border-width:2px 2px 2px 2px;
+	-fx-background-color:transparent;
+	-fx-font-size:15px;
+	-fx-border-radius:5px;
+	-fx-background-Radius:50px;
+}
